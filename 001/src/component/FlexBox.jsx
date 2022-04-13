@@ -1,8 +1,15 @@
 import React from 'react'
+import Box from './Box'
 
 const FlexBox = () => {
      return (
-          <div>FlexBox</div>
+          <>
+               <div className='flex justify-around'>
+                    <Box />
+                    <Box />
+                    <Box />
+               </div>
+          </>
      )
 }
 
