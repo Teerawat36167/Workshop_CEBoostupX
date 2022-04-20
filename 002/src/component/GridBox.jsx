@@ -7,8 +7,8 @@ const GridBox = (props) => {
 
      return (
           <div className='grid grid-cols-4 gap-16 m-16'>
-               {Object.values(data).map((title) => {
-                    return <Box {...title} />
+               {Object.values(data).map((title , index) => {
+                    return <Box key={index} {...title} />
                })}
           </div>
      )
